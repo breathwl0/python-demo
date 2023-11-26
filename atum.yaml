@@ -1,0 +1,14 @@
+# atum document: https://bytedance.feishu.cn/wiki/wikcndSsKbtLOYLJaBao0IC5yLf
+name: demo_python_flask
+psm: codebase.ide.demo_python_flask
+manifest_version: 1
+stages:
+  - name: run
+    type: run
+    work_dir: /opt/tiger/app/demo_python_flask
+    includes:
+      - python@v1?python_version=3.9.0
+    inputs:
+      - type: local
+        source: .
+        target: /opt/tiger/app/demo_python_flask
